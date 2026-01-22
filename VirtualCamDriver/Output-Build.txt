@@ -1,0 +1,14 @@
+﻿Rebuild started at 4:10 PM...
+1>------ Rebuild All started: Project: VirtualCamDriver, Configuration: Release x64 ------
+1>VirtualCam.cpp
+1>Previous IPDB not found, fall back to full compilation.
+1>All 3 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+1>VirtualCam.obj : warning LNK4104: export of symbol 'DllUnregisterServer' should be PRIVATE
+1>VirtualCam.obj : warning LNK4104: export of symbol 'DllRegisterServer' should be PRIVATE
+1>   Creating library C:\Users\FemiBenua\source\repos\VirtualCamDriver\x64\Release\VirtualCamDriver.lib and object C:\Users\FemiBenua\source\repos\VirtualCamDriver\x64\Release\VirtualCamDriver.exp
+1>Generating code
+1>Finished generating code
+1>VirtualCamDriver.vcxproj -> C:\Users\FemiBenua\source\repos\VirtualCamDriver\x64\Release\VirtualCamDriver.dll
+1>Done building project "VirtualCamDriver.vcxproj".
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+========== Rebuild completed at 4:10 PM and took 01.372 seconds ==========
