@@ -12,7 +12,7 @@ This project allows users to replace their physical webcam and microphone with *
 - System‑wide **virtual camera** (appears in all apps)
 - Media Foundation–based architecture
 - Windows‑native C++ implementation
-- Installer/registrar executable
+- Installer / registrar executable
 - Clean separation of installer, engine, and UI layers
 
 ### 🎥 Video Capabilities (Planned)
@@ -53,23 +53,27 @@ This project allows users to replace their physical webcam and microphone with *
 This project follows the **industry‑standard Windows virtual camera architecture** used by tools like OBS Virtual Camera and NVIDIA Broadcast.
 
 ### Architecture Overview
+
+```text
 ┌─────────────────────────────┐
-│ VirtualCamInstaller (EXE) │
-│ - Registers system camera │
-│ - Unregisters camera │
+│  VirtualCamInstaller (EXE)  │
+│  - Registers system camera  │
+│  - Unregisters camera       │
 └──────────────┬──────────────┘
-│
+               │
 ┌──────────────▼──────────────┐
-│ Virtual Camera Engine DLL │
-│ - Media Foundation source │
-│ - Video & audio streaming │
+│  Virtual Camera Engine DLL  │
+│  - Media Foundation source  │
+│  - Video & audio streaming  │
 └──────────────┬──────────────┘
-│
+               │
 ┌──────────────▼──────────────┐
-│ UI Application │
-│ - Upload video/audio │
-│ - Avatar & voice control │
+│        UI Application       │
+│  - Upload video/audio       │
+│  - Avatar & voice control  │
 └─────────────────────────────┘
+
+
 
 yaml
 Copy code
